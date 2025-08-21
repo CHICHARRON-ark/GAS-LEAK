@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GAS-LEAK/static/css/main.1c606398.css",
+    "main.js": "/GAS-LEAK/static/js/main.bfce39fc.js",
+    "static/js/977.2caed02d.chunk.js": "/GAS-LEAK/static/js/977.2caed02d.chunk.js",
+    "static/js/455.74213902.chunk.js": "/GAS-LEAK/static/js/455.74213902.chunk.js",
+    "static/js/453.d855a71b.chunk.js": "/GAS-LEAK/static/js/453.d855a71b.chunk.js",
+    "static/media/logo.webp": "/GAS-LEAK/static/media/logo.915f2431c348bcbd8d32.webp",
+    "index.html": "/GAS-LEAK/index.html",
+    "main.1c606398.css.map": "/GAS-LEAK/static/css/main.1c606398.css.map",
+    "main.bfce39fc.js.map": "/GAS-LEAK/static/js/main.bfce39fc.js.map",
+    "977.2caed02d.chunk.js.map": "/GAS-LEAK/static/js/977.2caed02d.chunk.js.map",
+    "455.74213902.chunk.js.map": "/GAS-LEAK/static/js/455.74213902.chunk.js.map",
+    "453.d855a71b.chunk.js.map": "/GAS-LEAK/static/js/453.d855a71b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c606398.css",
+    "static/js/main.bfce39fc.js"
+  ]
+}
