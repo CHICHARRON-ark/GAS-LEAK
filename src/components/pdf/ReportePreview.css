@@ -1,0 +1,38 @@
+.reporte-pdf {
+  width: 700px;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #000;
+}
+
+.medidores {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.medidor {
+  text-align: center;
+}
+
+.circulo.grande {
+  width: 120px;
+  height: 120px;
+  background-color: #ff0800;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto;
+}
+
+.grafico-barras {
+  margin-top: 30px;
+  width: 700px;    /* igual que el contenedor principal */
+  height: 350px;   /* altura fija */
+  overflow: visible; /* asegurarnos que nada se recorte */
+}
+

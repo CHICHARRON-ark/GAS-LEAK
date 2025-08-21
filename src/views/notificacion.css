@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  color: black;
+}
+
+.sidebar6 {
+  width: 230px;
+  background-color: #ffa200;
+  border-radius: 35px;
+  margin: 100px 0 10px 30px; 
+  padding: 10px 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  height: 65vh;
+}
+
+.logo {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ff6b6b;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.logo-text2 {
+  font-weight: bold;
+  color: #000000;
+  font-size: 2rem;
+}
+
+.nav-buttons button {
+  display: block;
+  width: 80%; /* corregido de 120% a 80% */
+  padding: 13px 0;
+  margin: 35px auto;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.nav-buttons button:hover {
+  background-color: #b0b0b0;
+}
+
+.diario-container {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: white;
+  color: black;
+}
+
+.titulo {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+  text-align: center;
+}
+
+.grafico-notificacion {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recharts-legend-item-text {
+  color: black !important;
+}
+
+.recharts-tooltip-wrapper {
+  color: black !important;
+}

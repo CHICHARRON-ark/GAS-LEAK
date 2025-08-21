@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white; /* Fondo blanco */
+  color: black; /* Texto negro */
+}
+
+.diario-main {
+  display: flex;
+  height: 100vh;
+  background-color: white; /* Fondo blanco */
+  color: black; /* Texto negro */
+}
+
+.sidebar5 {
+  width: 230px;
+  background-color: #ffa200;
+  border-radius: 35px;
+  margin: 100px 0 10px 30px; 
+  padding: 10px 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  height: 65vh;
+  
+}
+
+
+.logo {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ff6b6b; /* Mantiene color logo */
+}
+
+.btn5 {
+  display: block;
+  width: 80%;
+  padding: 13px 0;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.logo-text2 {
+  font-weight: bold;
+  color: #000000;
+  font-size: 2rem !important;
+}
+
+
+.btn:hover {
+  background-color: #b0b0b0;
+}
+
+.diario-container {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: white;
+  color: black;
+}
+
+.titulo {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.fecha {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.fila-grafico {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.label-eje {
+  width: 120px;
+  font-size: 16px;
+  padding-top: 10px;
+  color: black;
+}
+
+.grafico-container {
+  flex: 1;
+  position: relative;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Fondo muy claro */
+  min-height: 150px;
+  transition: min-height 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grafico-container.expandido {
+  min-height: 250px;
+}
+
+.grafico-scroll-wrapper {
+  width: 100%;
+  overflow-y: hidden;
+  max-height: 220px;
+}
+
+.grafico-contenido {
+  height: 100%;
+  padding: 15px;
+  white-space: nowrap;
+  /* El ancho se controla inline desde React */
+}
+
+/* Scrollbar styling */
+.grafico-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.grafico-scroll-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.grafico-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.grafico-scroll-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.marcadores-lateral {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  z-index: 2;
+}
+
+.icono-nivel {
+  width: 30px;
+  height: 30px;
+  margin: -10px 0;
+  object-fit: contain;
+}
+
+.indicador-lateral {
+  position: absolute;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+/* Ejes y texto del gráfico en negro */
+.recharts-cartesian-axis-tick text,
+.recharts-tooltip-wrapper {
+  fill: black !important;
+  color: black !important;
+  background-color: white !important;
+  border-color: #ccc !important;
+}
+
+/* Tooltip personalizado */
+.recharts-tooltip-wrapper {
+  background-color: white !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px !important;
+  padding: 10px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Líneas de gráfico mantienen color original, no se cambia aquí */

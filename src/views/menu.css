@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Se rellenó el valor faltante */
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  z-index: 2;
+  margin: 0;
+  background: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* Clase para la imagen del logo */
+.logo-img {
+  width: 65px;    
+  height: auto;   
+  margin: 30;
+}
+
+/* Texto al lado del logo */
+.logo-text1 {
+  font-weight: bold;
+  color: #000000;
+  font-size: 2rem !important;
+}
+
+
+.sidebar1 {
+  width: 230px;
+  background-color: #ffa200;
+  border-radius: 35px;
+  margin: 100px 0 10px 30px; 
+  padding: 10px 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  height: 65vh;
+  
+}
+
+.nav-buttons {
+  width: 100%;
+}
+
+.nav-buttons button {
+  display: block;
+  width: 100%;
+  padding: 13px 0;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #222;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  
+}
+
+.nav-buttons button.active,
+.nav-buttons button:hover {
+  background-color: #9a9696;
+  color: rgb(8, 8, 8);
+}
+
+.main-content {
+  flex: 1;
+  padding: 50px 40px 0 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  color: black;
+}
+
+h1 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.gauge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.gauge {
+  position: relative;
+  width: 330px;
+  height: 160px;
+  margin-bottom: 18px;
+}
+
+.colors {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.segment {
+  width: 33.3%;
+  height: 60px;
+}
+
+.yellow {
+  background-color: #ffcc00;
+  border-radius: 60px 0 0 0;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.red {
+  background-color: #f44336;
+  border-radius: 0 60px 0 0;
+}
+
+.needle {
+  width: 8px;
+  height: 110px;
+  background: linear-gradient(180deg, #222 80%, #fff 100%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(30deg);
+  transform-origin: bottom center;
+  border-radius: 4px;
+  box-shadow: 0 0 7px rgba(225, 6, 6, 0.4);
+}
+
+.temperature-box {
+  background-color: #e4e2e2;
+  padding: 28px 32px;
+  border-radius: 30px;
+  color: black;
+  width: 270px;
+  text-align: center;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+.thermometer-icon {
+  font-size: 2.1rem;
+  margin-bottom: 5px;
+}
+
+.temp-value {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.temp-label {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 500;
+  margin-top: 2px;
+}

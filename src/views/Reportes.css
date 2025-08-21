@@ -1,0 +1,86 @@
+.reportes-container {
+  display: flex;
+  height: 100vh;
+  background-color: #ffffff;
+  color: white;
+  font-family: Arial;
+
+}
+
+.sidebar3 {
+  width: 230px;
+  background-color: #ffa200;
+  border-radius: 35px;
+  margin: 100px 0 10px 30px; 
+  padding: 10px 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  height: 65vh;
+  
+}
+
+.logo-text3 {
+  color: #2a0000;
+  font-size: 2rem !important;
+}
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn.active {
+  background-color: #555;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  background-color: transparent;
+  padding: 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 20px; 
+}
+
+.descarga-section {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.descarga-btn {
+  padding: 1rem 1rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}

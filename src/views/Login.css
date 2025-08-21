@@ -1,0 +1,58 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/src/logo.webp') no-repeat center;
+  background-size: 450px;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.276);
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 260px;
+}
+
+.title {
+  color: #ff8400;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.input {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  background-color: #eee;
+  font-size: 20px;
+  color: #ed0c0c;
+
+}
+.input::placeholder {
+  color: red;
+}
+
+
+
+.login-button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
